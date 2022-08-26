@@ -28,7 +28,6 @@ This package aims at automating the process of generating cryptographic hashes i
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/louisbrulenaudet/mongoose-subresource-integrity/issues)
 ![npm version](https://img.shields.io/npm/v/mongoose-subresource-integrity)
 
-
 ## Features
 
 - Focus on high performance
@@ -37,11 +36,9 @@ This package aims at automating the process of generating cryptographic hashes i
 - High availability for synchronization with CDN systems
 - Simple deployment with one-line integration
 
-
 ## Tech Stack
 
 **Server:** Node, Express, Mongoose
-
 
 ## Installation
 
@@ -122,7 +119,6 @@ IntegritySchema.set('toJSON', {
 const Integrity =  mongoose.model("integrity", IntegritySchema);
 
 module.exports = Integrity;
-
 ```
 
 Once we define a model through `mongoose.model('integrity', IntegritySchema)`, we can use it through the following function :
@@ -132,10 +128,9 @@ sri.saveSubresourceIntegrityHash(
   "./public/css"
 );
 ````
+
 Where the first argument is the path to the file describing the Mongoose schema, and the second is the one containing the set of subfolders and statics files to which we want to collect the hash for the Subresource Integrity checkin.
 ## Usage/Examples
-
-
 
 ```javascript
 {
@@ -149,14 +144,13 @@ Where the first argument is the path to the file describing the Mongoose schema,
 
 ```
 
-
 ## 🚀 About Me
 
 My name is louis, student researcher in corporate taxation at Dauphine-PSL University and full-stack developer (NodeJS, MongoDB, Express, Front-End), specializing in French cryptocurrency law issues, SEO optimization and user experience improvement. 
 
 ## License
 
-Copyright (c) 2022 Louis Brulé Naudet <contact@louisbrulenaudet.com>
+Copyright (c) 2022 Louis Brulé Naudet <contact@louisbrulenaudet.com>.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -166,5 +160,5 @@ THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Feedback
 
-If you have any feedback, please reach out to us at contact@louisbrulenaudet.com
+If you have any feedback, please reach out to us at contact@louisbrulenaudet.com.
 
