@@ -1,7 +1,7 @@
 
 # mongoose-subresource-integrity
 
-Ultralight, non-dependent and minimalist open-source package for recursively generate **sha-384 subresource integrity hashes** and store them into [MongoDB](https://www.mongodb.com) schema with [Mongoose](https://www.npmjs.com/package/mongoose) to authenticate **.js** and **.css** files.
+Ultralight, non-dependent and minimalist open-source package to recursively generate **sha-384 subresource integrity hashes** and store them into [MongoDB](https://www.mongodb.com) schema with [Mongoose](https://www.npmjs.com/package/mongoose) to authenticate **.js** and **.css** files.
 
 ```js
 const sri = require('mongoose-subresource-integrity');
