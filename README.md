@@ -1,4 +1,3 @@
-
 # mongoose-subresource-integrity
 
 Ultralight, non-dependent and minimalist open-source package to recursively generate **sha-384 subresource integrity hashes** and store them into [MongoDB](https://www.mongodb.com) schema with [Mongoose](https://www.npmjs.com/package/mongoose) to authenticate **.js** and **.css** files.
@@ -130,7 +129,10 @@ sri.saveSubresourceIntegrityHash(
 ````
 
 Where the first argument is the path to the file describing the Mongoose schema, and the second is the one containing the set of subfolders and statics files to which we want to collect the hash for the Subresource Integrity checkin.
+
 ## Usage/Examples
+
+When executing the `saveSubresourceIntegrityHash` function, it becomes possible to observe within the database, the creation of an object for each file contained in the directory and its subdirectories, or its replacement in case of identical absolute access paths, as well as the assignment of a unique hash preceded by the mention "sha384-" as follows :
 
 ```javascript
 {
@@ -146,7 +148,7 @@ Where the first argument is the path to the file describing the Mongoose schema,
 
 ## 🚀 About Me
 
-My name is louis, student researcher in corporate taxation at Dauphine-PSL University and full-stack developer (NodeJS, MongoDB, Express, Front-End), specializing in French cryptocurrency law issues, SEO optimization and user experience improvement. 
+My name is [Louis](https://louisbrulenaudet.com), student researcher in corporate taxation at Dauphine-PSL University and full-stack developer (NodeJS, MongoDB, Express, Front-End), specializing in French cryptocurrency law issues, SEO optimization and user experience improvement. 
 
 ## License
 
